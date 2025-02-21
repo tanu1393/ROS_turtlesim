@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Start the ROS Master -->
+    <include file="$(find roslaunch)/launch/roscore.launch"/>
+
+    <!-- Start the Turtlesim Node -->
+    <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" output="screen"/>
+
+    <!-- Start the PID Controller Node from the 'pid' package -->
+    <node name="pid_controller" pkg="pid" type="controller" output="screen"/>
+
+    <!-- Start the Python Script for PID-based Turtle Movement -->
+    <node name="Goal1" pkg="flytbase_assignment" type="Goal1.py" output="screen"/>
+</launch>
+
