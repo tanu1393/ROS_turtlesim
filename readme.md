@@ -11,7 +11,7 @@ The project consists of several Python scripts, each focusing on a specific goal
 * **`goal3_rotate_turtle_in_circle.py`:** Makes a turtlebot move in a continuous circular path, publishing both real and noisy pose data.
 * **`goal4_chase_turtle_fast.py`:** Simulates a fast chase between a "Robber Turtle" and a "Police Turtle," with the police turtle using real-time pose information.
 * **`goal5_chase_turtle_slow.py`:** Simulates a chase where the police turtle is slower and must predict the robber turtle's future position.
-
+* **`goal6_chase_turtle_noisy.py`:** Simulates a chase where the police turtle is slower and must predict the robber turtle's future position but PT has access to noisy pose of RT every 5 seconds.
 
 ## Running the Simulations
 
